@@ -46,4 +46,4 @@ jobs:
             echo ${SSH_MIRROR_KEY} | base64 -d > ssh.priv
             chmod 400 ssh.priv
             scp -i ssh.priv image/*.ova mirror@mirror.informatik.hs-fulda.de:/blackhole/mirror/hs-fulda/opennms/virtual-appliance
-            scp -i ssh.priv image/packer-base-ubuntu-cloud-amd64* mirror@mirror.informatik.hs-fulda.de:/blackhole/mirror/hs-fulda/opennms/virtual-appliance
+            scp -i ssh.priv image/packer-base-ubuntu-cloud* mirror@mirror.informatik.hs-fulda.de:/blackhole/mirror/hs-fulda/opennms/virtual-appliance

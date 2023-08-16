@@ -27,8 +27,6 @@ ova: manifest
 	@cd image && \
 	tar -cvf ubuntu.ova ubuntu.ovf ubuntu.mf ubuntu-1.vmdk && \
 	sha256sum --tag -b ubuntu.ova > ubuntu.shasum
-	@echo "Cleanup QEMU image and VMDK file"
-	@mv image/packer-base-ubuntu-cloud-amd64 image/ubuntu.img
 
 clean:
 	@echo "Delete build artifacts"
