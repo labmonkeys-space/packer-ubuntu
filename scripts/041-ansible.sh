@@ -1,2 +1,2 @@
 #!/bin/sh -eux
-apt-get install -y acl ansible
+apt-get install -y acl ansible-core
